@@ -1,2 +1,2 @@
 [![PR Workflow](https://github.com/jimmiehaskell/bff-agendador-tarefas/actions/workflows/gradle.yml/badge.svg)](https://github.com/jimmiehaskell/bff-agendador-tarefas/actions/workflows/gradle.yml)
-[![Qodana](https://github.com/jimmiehaskell/bff-agendador-tarefas/actions/workflows/qodana_code_quality.yml/badge.svg)](https://github.com/jimmiehaskell/bff-agendador-tarefas/actions/workflows/qodana_code_quality.yml)
+[![Qodana](https://github.com/jimmiehaskell/bff-agendador-tarefas/actions/workflows/code_quality.yml/badge.svg)](https://github.com/jimmiehaskell/bff-agendador-tarefas/actions/workflows/code_quality.yml)
