@@ -36,5 +36,5 @@ jobs:
           # Upload Qodana results (SARIF, other artifacts, logs) as an artifact to the job
           upload-result: ${{ github.ref_name == 'main' }}
           artifact-name: 'qodana-report'
-          # quick-fixes available in Ultimate and Ultimate Plus plans
+          # quick-fixes available in Ultimate and Ultimate Plus plans.
           push-fixes: 'none'
