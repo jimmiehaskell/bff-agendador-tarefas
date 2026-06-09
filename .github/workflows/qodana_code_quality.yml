@@ -6,6 +6,7 @@ on:
     branches: # Specify your branches here
       - main # The 'main' branch
       - 'releases/*' # The release branches
+      - 'feature/*' # The feature branches
 
 jobs:
   qodana:
@@ -19,6 +20,11 @@ jobs:
         with:
           ref: ${{ github.event.pull_request.head.sha }}  # to check out the actual pull request commit, not the merge commit
           fetch-depth: 0  # a full history is required for pull request analysis
+      - name: Set up Java
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'corretto' # Ou a sua distribuição preferida (adopt, temurin, etc.)
+          java-version: '21'
       - name: 'Qodana Scan'
         uses: JetBrains/qodana-action@v2026.1
         with:
