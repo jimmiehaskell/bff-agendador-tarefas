@@ -1,3 +1,11 @@
 spring:
   application:
     name: bff-agendador
+
+usuario:
+  url: localhost:8080/usuario
+agendador-tarefa:
+  url: localhost:8081/tarefas
+
+server:
+  port: 8083
