@@ -7,6 +7,7 @@ import dev.jimmiehaskell.bffagendador.business.dto.in.UsuarioDTORequest;
 import dev.jimmiehaskell.bffagendador.business.dto.out.EnderecoDTOResponse;
 import dev.jimmiehaskell.bffagendador.business.dto.out.TelefoneDTOResponse;
 import dev.jimmiehaskell.bffagendador.business.dto.out.UsuarioDTOResponse;
+import dev.jimmiehaskell.bffagendador.business.dto.out.ViaCepDTOResponse;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.*;
 
@@ -47,4 +48,7 @@ public interface UsuarioClient {
     @PostMapping("/telefone")
     TelefoneDTOResponse cadastraTelefone(@RequestBody TelefoneDTORequest dto,
                                         @RequestHeader("Authorization") String token);
+
+    @GetMapping("/endereco/{cep}")
+    ViaCepDTOResponse buscarDadosCep(@PathVariable String cep);
 }

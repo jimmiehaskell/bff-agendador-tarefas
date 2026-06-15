@@ -7,6 +7,7 @@ import dev.jimmiehaskell.bffagendador.business.dto.in.UsuarioDTORequest;
 import dev.jimmiehaskell.bffagendador.business.dto.out.EnderecoDTOResponse;
 import dev.jimmiehaskell.bffagendador.business.dto.out.TelefoneDTOResponse;
 import dev.jimmiehaskell.bffagendador.business.dto.out.UsuarioDTOResponse;
+import dev.jimmiehaskell.bffagendador.business.dto.out.ViaCepDTOResponse;
 import dev.jimmiehaskell.bffagendador.infrastructure.client.UsuarioClient;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
@@ -50,5 +51,9 @@ public class UsuarioService {
 
     public TelefoneDTOResponse cadastraTelefone(String token, TelefoneDTORequest dto) {
         return usuarioClient.cadastraTelefone(dto, token);
+    }
+
+    public ViaCepDTOResponse buscarEnderecoCep(String cep) {
+        return usuarioClient.buscarDadosCep(cep);
     }
 }
