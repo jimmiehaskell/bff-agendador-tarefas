@@ -23,7 +23,7 @@ public interface UsuarioClient {
     String login(@RequestBody LoginRequestDTO loginRequestDTO);
 
     @DeleteMapping("/{email}")
-    void deletaUsuarioPorEmail(@PathVariable("email") String email,
+    void deletaUsuarioPorEmail(@PathVariable String email,
                                @RequestHeader("Authorization") String token);
 
     @PutMapping

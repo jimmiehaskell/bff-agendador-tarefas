@@ -1,7 +1,6 @@
 package dev.jimmiehaskell.bffagendador.business.dto.in;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
-import dev.jimmiehaskell.bffagendador.infrastructure.enums.StatusNotificacaoEnum;
 import lombok.*;
 
 import java.time.LocalDateTime;
