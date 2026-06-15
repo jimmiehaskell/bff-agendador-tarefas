@@ -8,15 +8,15 @@ spring:
           enabled: true
 
 usuario:
-  url: localhost:8080/usuario
-  email:
-  senha:
+  url: usuario:8080/usuario
+  email: admin@admin.com
+  senha: admin
 
 agendador-tarefa:
-  url: localhost:8081/tarefas
+  url: agendador-tarefas:8081/tarefas
 
 notificacao:
-  url: localhost:8082/email
+  url: notificacao:8082/email
 
 # Roda a cada 5 minutos, todos os dias.
 cron:
