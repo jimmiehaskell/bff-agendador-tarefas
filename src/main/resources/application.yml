@@ -9,8 +9,8 @@ spring:
 
 usuario:
   url: usuario:8080/usuario
-  email: 
-  senha: 
+  email: EMAIL_DO_SERVIÇO
+  senha: SENHA_UNICA_API
 
 agendador-tarefa:
   url: agendador-tarefas:8081/tarefas
